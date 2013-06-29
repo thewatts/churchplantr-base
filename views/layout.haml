@@ -1,0 +1,135 @@
+!!!
+/[if IE 7] <html class="ie7 oldie" lang="en" lang="en-US">
+/[if IE 8] <html class="ie8 oldie" lang="en" lang="en-US">
+/[if IE 9] <html class="ie9" lang="en" lang="en-US">
+/ [if gt IE 9]><!
+%html{:lang => "en-US"}
+  / <![endif]
+  %head
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %title CHURCHPLANTR
+    /[if lt IE 9]
+      %script{:src => "http://fundifydemo.castyourvision.net/wp-content/themes/fundify/js/html5.js", :type=>"text/javascript"}
+    %meta{:content => "noindex,nofollow", :name => "robots"}/
+    %link{rel: 'stylesheet', href: 'stylesheets/style.css'}
+  %body.home
+    .navbar.navbar-fixed-top#header
+      .navbar-inner
+        .container
+          %button.btn.btn-navbar.collapsed{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand#logo{:href => "./index.html"} CHURCHPLANTR
+          .nav-collapse.collapse{:style => "height: 0px;"}
+            %ul.nav#main-nav
+              %li
+                %a{:href => "#"} Find a Cause
+              %li
+                %a{:href => "#"} Start Your Cause
+              %li
+                %a{:href => "#"} The Details
+              %li
+                %a{:href => "./components.html"} Log In
+    = yield
+    %footer#footer
+      .container
+        .footer-widget
+          %div
+            %h3.widget-title Pages
+            %ul
+              %li.page_item.page-item-164.current_page_parent
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=164"} Blog
+              %li.page_item.page-item-5
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=5"} Checkout
+                %ul.children
+                  %li.page_item.page-item-8
+                    %a{:href => "http://fundifydemo.castyourvision.net/?page_id=8"} Purchase History
+                  %li.page_item.page-item-7
+                    %a{:href => "http://fundifydemo.castyourvision.net/?page_id=7"} Transaction Failed
+              %li.page_item.page-item-524
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=524"} Checkout
+              %li.page_item.page-item-327
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=327"} Contact
+              %li.page_item.page-item-532
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=532"} Download
+              %li.page_item.page-item-501
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=501"} FAQ
+              %li.page_item.page-item-13
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=13"} Featured
+              %li.page_item.page-item-9
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=9"} Home
+              %li.page_item.page-item-19
+                %a{:href => "http://fundifydemo.castyourvision.net/"} Home
+              %li.page_item.page-item-521
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=521"} Login
+              %li.page_item.page-item-536
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=536"} Member
+              %li.page_item.page-item-565
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=565"} New This Week
+              %li.page_item.page-item-6
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=6"} Purchase Confirmation
+              %li.page_item.page-item-526
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=526"} Purchase History
+              %li.page_item.page-item-529
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=529"} Register
+              %li.page_item.page-item-2
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=2"} Sample Page
+              %li.page_item.page-item-567
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=567"} Staff Picks
+              %li.page_item.page-item-119
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=119"} Start A Campaign
+              %li.page_item.page-item-538
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=538"} Thank You
+              %li.page_item.page-item-509
+                %a{:href => "http://fundifydemo.castyourvision.net/?page_id=509"} Your Account
+        .footer-widget
+          %div
+            %h3.widget-title Archives
+            %ul
+              %li
+                %a{:href => "http://fundifydemo.castyourvision.net/?m=201306", :title => "June 2013"} June 2013
+              %li
+                %a{:href => "http://fundifydemo.castyourvision.net/?m=201303", :title => "March 2013"} March 2013
+              %li
+                %a{:href => "http://fundifydemo.castyourvision.net/?m=201302", :title => "February 2013"} February 2013
+        .footer-widget
+          %div
+            %h3.widget-title Meta
+            %ul
+              %li
+                %a{:href => "http://fundifydemo.castyourvision.net/wp-login.php?action=register"} Register
+              %li
+                %a{:href => "http://fundifydemo.castyourvision.net/wp-login.php"} Log in
+              %li
+                %a{:href => "http://fundifydemo.castyourvision.net/?feed=rss2", :title => "Syndicate this site using RSS 2.0"}
+                  Entries
+                  %abbr{:title => "Really Simple Syndication"} RSS
+              %li
+                %a{:href => "http://fundifydemo.castyourvision.net/?feed=comments-rss2", :title => "The latest comments to all posts in RSS"}
+                  Comments
+                  %abbr{:title => "Really Simple Syndication"} RSS
+              %li
+                %a{:href => "http://wordpress.org/", :title => "Powered by WordPress, state-of-the-art semantic personal publishing platform."} WordPress.org
+        .last-widget
+          %h3 Get the Stats
+          %ul
+            %li
+              %strong 42
+              Campaigns
+            %li
+              %strong $0.00
+              Funded
+          .copy
+            %a{:href => "http://fundifydemo.castyourvision.net"}
+              %img.footer-logo{:alt => "Unique Giving Example", :src => ""}/
+            %p &copy; Copyright Unique Giving Example 2013
+      / / container
+    / / footer
+    %script{:src => "/javascripts/jquery.min.js"}
+    %script{:src => "/javascripts/jquery.masonry.min.js"}
+    :javascript
+      var fundifySettings = {"is_front_page":"1","currency":{"thousands":null,"decimal":null,"symbol":"$"}};
+    %script{:src => "/javascripts/fundify.js"}
+    %script{:src => "/javascripts/javascripts/bootstrap-collapse.js"}

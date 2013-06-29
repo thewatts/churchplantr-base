@@ -1,0 +1,41 @@
+.new-campaign-tabs-wrap
+  .container
+    .row
+      .span4
+        <h3>Create Your Campaign!</h3>
+      .span8
+        %ul.nav.nav-tabs.new-campaign-tabs
+          %li#startTab.active
+            %a{"data-toggle" => "tab", :href => "#gettingStarted"} Getting Started
+          %li#infoTab
+            %a{"data-toggle" => "tab", :href => "#churchInfo"} Church Info
+          %li#visionTab
+            %a{"data-toggle" => "tab", :href => "#churchVision"} Your Vision
+          %li#needsTab
+            %a{"data-toggle" => "tab", :href => "#churchNeeds"} Your Needs
+          %li#accountTab
+            %a{"data-toggle" => "tab", :href => "#churchAccount"} Account Setup
+          %li#reviewTab
+            %a{"data-toggle" => "tab", :href => "#churchReview"} Review
+
+.container
+  .row
+    .span12
+      .tab-content
+        #gettingStarted.tab-pane.active
+          %h1 Getting Started
+
+        #churchInfo.tab-pane
+          %h1 Your Church Info
+
+        #churchVision.tab-pane
+          %h1 Your Vision
+
+        #churchNeeds.tab-pane
+          %h1 Your Needs
+
+        #churchAccount.tab-pane
+          %h1 Account Setup
+
+        #churchReview.tab-pane
+          %h1 Review!

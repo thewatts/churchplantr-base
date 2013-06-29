@@ -1,0 +1,245 @@
+.title.title-two.pattern-4
+  .container
+    %h1
+      %span{:itemprop => "name"} Chorus Of Canada
+    %h3 By Jone Rivers
+  / / container
+#content.post-details
+  .container
+    .edd_errors
+    .search-box
+      %form#searchform{:action => "http://fundifydemo.castyourvision.net/", :method => "get", :role => "search"}
+        %input{:name => "s", :placeholder => "Search", :type => "text"}/
+        %button#searchsubmit.submit{:name => "submit", :type => "submit"}
+          %i.icon-search
+        %input{:name => "type", :type => "hidden", :value => "download"}/
+    .sort-tabs.campaign
+      %ul
+        %li
+          %a.campaign-view-descrption.tabber{:href => "#description"} Overview
+        %li
+          %a.tabber{:href => "#updates"} Updates
+        %li
+          %a.tabber{:href => "#comments"} Comments
+        %li
+          %a.tabber{:href => "#backers"} Backers
+    %article.project-details
+      .image
+        %img.attachment-blog.wp-post-image{:alt => "6531357807_20d15aca68_o", :height => "396", :src => "http://fundifydemo.castyourvision.net/wp-content/uploads/2013/02/6531357807_20d15aca68_o-745x396.jpg", :width => "745"}/
+      .right-side
+        %ul.campaign-stats
+          %li.progress
+            %h3 $0.00
+            %p Pledged of $1000.00 Goal
+            .bar
+              %span{:style => "width: 0%"}
+          %li.backer-count
+            %h3 1
+            %p Backer
+          %li.days-remaining
+            %h3 36
+            %p Days to Go
+        .contribute-now
+          %a.btn-green.contribute{:href => "#contribute-now"} Contribute Now
+        %p.fund
+          All funds will be collected on August 5, 2013.
+    %aside#sidebar
+      .widget.widget-bio
+        %h3 About the Author
+        %img.avatar.avatar-40.photo{:alt => "", :height => "40", :src => "http://0.gravatar.com/avatar/cfa2bf029a92b153d0dd5787049c76df?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G", :width => "40"}/
+        .author-bio
+          %strong Jone Rivers
+          %br/
+          %small
+            Created 42 Campaigns
+            \&bull;
+            %a{:href => "http://fundifydemo.castyourvision.net/?author=1"} View Profile
+        %ul.author-bio-links
+        .author-bio-desc
+        .author-contact
+          %p
+            %a.button.btn-green{:href => "mailto:dummy@domain.com"} Ask Question
+      #contribute-now.single-reward-levels
+        / dynamic-cached-content
+        %form#edd_purchase_262.edd_download_purchase_form{:method => "post"}
+          %h2 Enter your pledge amount
+          %p.fundify_custom_price_wrap
+            $
+            %input#fundify_custom_price{:name => "fundify_custom_price", :type => "text", :value => ""}/
+          .edd_purchase_submit_wrapper
+            %input.edd-add-to-cart.button.blue{"data-action" => "edd_add_to_cart", "data-download-id" => "262", "data-price-mode" => "multi", "data-variable-price" => "yes", :name => "edd_purchase_download", :type => "submit", :value => "Contribute Now"}/
+            %a.edd_go_to_checkout.button.blue{:href => "http://fundifydemo.castyourvision.net/?page_id=5", :style => "display:none;"} Checkout
+            %span.edd-cart-ajax-alert
+              %img.edd-cart-ajax{:alt => "Loading", :src => "http://fundifydemo.castyourvision.net/wp-content/plugins/easy-digital-downloads/assets/images/loading.gif", :style => "display: none;"}/
+              %span.edd-cart-added-alert{:style => "display: none;"}
+                \&mdash;
+                Item successfully added to your
+                = succeed "." do
+                  %a{:href => "http://fundifydemo.castyourvision.net/?page_id=5", :title => "Go to Checkout"} cart
+          / end .edd_purchase_submit_wrapper
+          %input{:name => "download_id", :type => "hidden", :value => "262"}/
+          %input{:name => "edd_action", :type => "hidden", :value => "add_to_cart"}/
+          .edd_price_options.active
+            %ul
+              %li{"data-price" => "5.00"}
+                .clear
+                  %h3
+                    %label
+                      %input#edd_price_option_262_0.edd_price_option_262.edd_price_options_input{:name => "edd_options[price_id][]", :type => "radio", :value => "0"}/
+                      Pledge $5.00
+                  .backer-count
+                    %i.icon-user
+                    1 Backer
+                %p Get one of these amazing doohickeys at this low price and fund this campaign so we can continue to create great doohickeys.
+              %li{"data-price" => "50.00"}
+                .clear
+                  %h3
+                    %label
+                      %input#edd_price_option_262_1.edd_price_option_262.edd_price_options_input{:name => "edd_options[price_id][]", :type => "radio", :value => "1"}/
+                      Pledge $50.00
+                  .backer-count
+                    %i.icon-user
+                    0 Backers
+                %p Get the same amazing same doohickeys as listed above, with one awesome addition: we'll throw in two more doohickeys just cos we like you and and we'll even sign it personally as a sign of gratitude.
+              %li{"data-price" => "500.00"}
+                .clear
+                  %h3
+                    %label
+                      %input#edd_price_option_262_2.edd_price_option_262.edd_price_options_input{:name => "edd_options[price_id][]", :type => "radio", :value => "2"}/
+                      Pledge $500.00
+                  .backer-count
+                    %i.icon-user
+                    0 Backers
+                %p A custom batch of doohickeys made to order, with your choice of color and a custom label printed on the doohickey. Great for all your gift-giving needs!
+              %li{"data-price" => "1000.00"}
+                .clear
+                  %h3
+                    %label
+                      %input#edd_price_option_262_3.edd_price_option_262.edd_price_options_input{:name => "edd_options[price_id][]", :type => "radio", :value => "3"}/
+                      Pledge $1000.00
+                  .backer-count
+                    %i.icon-user
+                    0 Backers
+                %p A 2-day intensive adventure for 2! A chance of a lifetime for you and a friend to come and watch the doohickeys being created right in front of your eyes. This is a amazing one of a kind reward to our crowd funding partners.
+          / end .edd_price_options
+        / end #edd_purchase_262
+        / /dynamic-cached-content
+    #main-content
+      .post-meta.campaign-meta
+        .date
+          %i.icon-calendar
+          Launched: March 11, 2013
+        .funding-ends
+          %i.icon-clock
+          Funding Ends: August 5, 2013
+        .location
+          %i.icon-compass
+          Munich, Germany
+      .entry-share
+        Share this campaign
+        %a.share-twitter{:href => "http://twitter.com/home?status=Check+out+Chorus+Of+Canada+on+Unique+Giving+Example%21+http%3A%2F%2Ffundifydemo.castyourvision.net%2F%3Fdownload%3Dchorus-of-canada", :target => "_blank"}
+          %i.icon-twitter
+        %a.share-google{:href => "https://plus.google.com/share?url=http://fundifydemo.castyourvision.net/?download=chorus-of-canada", :target => "_blank"}
+          %i.icon-gplus
+        %a.share-facebook{:href => "http://www.facebook.com/sharer.php?s=100\n            &p[url]=http%3A%2F%2Ffundifydemo.castyourvision.net%2F%3Fdownload%3Dchorus-of-canada            &p[images][0]=http%3A%2F%2Ffundifydemo.castyourvision.net%2Fwp-content%2Fuploads%2F2013%2F02%2F6531357807_20d15aca68_o-745x396.jpg            &p[title]=Chorus+Of+Canada            &p[summary]=Check+out+Chorus+Of+Canada+on+Unique+Giving+Example%21+http%3A%2F%2Ffundifydemo.castyourvision.net%2F%3Fdownload%3Dchorus-of-canada"}
+          %i.icon-facebook
+        %a.share-pinterest{:href => "http://pinterest.com/pin/create/button/?url=http://fundifydemo.castyourvision.net/?download=chorus-of-canada", :target => "_blank"}
+          %i.icon-pinterest
+        %a.share-link{:href => "http://fundifydemo.castyourvision.net/?download=chorus-of-canada", :target => "_blank"}
+          %i.icon-link
+        %a.share-widget.fancybox{:href => "#share-widget"}
+          %i.icon-code
+        #share-widget.modal
+          .campaign-widget-preview
+            %h2.modal-title Embed a widget on your site
+            .campaign-widget-preview-widget
+              %iframe{:frameborder => "0", :height => "550px", :scrolling => "no", :src => "http://fundifydemo.castyourvision.net/?download=chorus-of-canada&widget=1", :width => "260px"}
+            .campaign-widget-preview-use
+              %p Help raise awareness for this campaign by sharing this widget. Simply paste the following HTML code most places on the web.
+              %p
+                %strong Embed Code
+              %pre &lt;iframe src="http://fundifydemo.castyourvision.net/?download=chorus-of-canada&widget=1" width="260px" height="500px" frameborder="0" scrolling="no" /&gt;&lt;/iframe&gt;
+      .entry-content.inner.campaign-tabs
+        #description
+          %div{:itemprop => "description", :itemscope => "", :itemtype => "http://schema.org/Product"}
+            %h3 Orchestra
+            %p
+              An
+              %b orchestra
+              is a large instrumental ensemble that contains sections of string, brass, woodwind, and percussion instruments. The term
+              %i orchestra
+              derives from the Greek
+              = succeed "," do
+                %i ορχήστρα
+              the name for the area in front of an ancient Greek stage reserved for the Greek chorus. The orchestra grew by accretion throughout the 18th and 19th centuries, but changed very little in composition during the course of the 20th century.
+            %p
+              %img.alignleft.size-medium.wp-image-177{:alt => "3721453809_f4b056913f_o", :height => "145", :src => "http://fundifydemo.castyourvision.net/wp-content/uploads/2013/02/3721453809_f4b056913f_o-300x145.jpg", :width => "300"}>/
+              A smaller-sized orchestra for this time period (of about fifty musicians or fewer) is called a
+              = succeed "." do
+                %b chamber orchestra
+              A full-size orchestra (about 100 musicians) may sometimes be called a “
+              %b> symphony orchestra
+              ” or “
+              %b> philharmonic orchestra
+              “; these modifiers do not necessarily indicate any strict difference in either the instrumental constitution or role of the orchestra, but can be useful to distinguish different ensembles based in the same city (for instance, the London Symphony Orchestra and theLondon Philharmonic Orchestra). A symphony orchestra will usually have over eighty musicians on its roster, in some cases over a hundred, but the actual number of musicians employed in a particular performance may vary according to the work being played and the size of the venue. A leading chamber orchestra might employ as many as fifty musicians; some are much smaller than that. Orchestras can also be found in schools. The term
+              %b concert orchestra
+              may sometimes be used (e.g., BBC Concert Orchestra; RTÉ Concert Orchestra)—no distinction is made on size of orchestra by use of this term, although their use is generally distinguished as for live concert. As such they are commonly chamber orchestras.
+            %p
+              The typical symphony orchestra consists of four proportionate groups of similar musical instruments called the woodwinds,brass, percussion, and strings. Other instruments such as the piano and celesta may sometimes be grouped into a fifth section such as a keyboard section or may stand alone, as may the concert harp and electric and electronic instruments. The orchestra, depending on the size, contains almost all of the standard instruments in each group. In the history of the orchestra, its instrumentation has been expanded over time, often agreed to have been standardized by the classical period and Beethoven’s influence on the classical model.
+              %sup#cite_ref-3
+                %br/
+            %h3 Beethoven’s influence
+            %p
+              The so-called “standard complement” of double winds and brass in the orchestra from the first half of the 19th century is generally attributed to the forces called for by Ludwig van Beethoven. The exceptions to this are his Symphony No. 4, Violin Concerto, and Piano Concerto No. 4, which each specify a single flute. The composer’s instrumentation almost always included paired flutes, oboes, clarinets, bassoons, horns and trumpets. Beethoven carefully calculated the expansion of this particular timbral “palette” in Symphonies 3, 5, 6, and 9 for an innovative effect. The third horn in the ”Eroica” Symphony arrives to provide not only some harmonic flexibility, but also the effect of “choral” brass in the Trio. Piccolo, contrabassoon, and trombones add to the triumphal finale of his Symphony No. 5. A piccolo and a pair of trombones help deliver storm and sunshine in the Sixth. The Ninth asks for a second pair of horns, for reasons similar to the “Eroica” (four horns has since become standard); Beethoven’s use of piccolo, contrabassoon, trombones, and untuned percussion—plus chorus and vocal soloists—in his finale, are his earliest suggestion that the timbral boundaries of “symphony” might be expanded for good. But for several decades after his departure,
+              %b symphonic instrumentation
+              was faithful to Beethoven’s well-established model, with few exceptions.
+        #updates
+          %h3.campaign-updates-title.sans Updates
+          %p
+            %strong UPDATE 1.
+            It’s been a week since the Fundify launch, and I just want to say thanks to all those that have supported us this far and helped spread the word.
+            = succeed "It\u{2019}s" do
+              %br/
+            putting a little (a lot) more pressure on us to actually create a really great final product – so we are doing our best.
+            = succeed "Only" do
+              %br/
+            a few more weeks now till the campaign ends and we can show off our amazing product!
+          %p
+            %strong UPDATE 2.
+          %p
+            We have already funded 50% in less than 24hrs!
+            %br>/
+            Thanks so much for the support - and for sharing the project.
+        #comments.comments-area
+          #respond
+            %h3#reply-title
+              Leave a Reply
+              %small
+                %a#cancel-comment-reply-link{:href => "/?download=chorus-of-canada#respond", :rel => "nofollow", :style => "display:none;"} Cancel reply
+            %form#commentform{:action => "http://fundifydemo.castyourvision.net/wp-comments-post.php", :method => "post"}
+              %p.comment-form-author
+                %label{:for => "author"}
+                  Name
+                  %span.required *
+                %input#author{"aria-required" => "true", :name => "author", :size => "30", :type => "text", :value => ""}/
+              %p.comment-form-email
+                %label{:for => "email"}
+                  Email
+                  %span.required *
+                %input#email{"aria-required" => "true", :name => "email", :size => "30", :type => "text", :value => ""}/
+              %p.comment-form-url
+                %label{:for => "url"} Website
+                %input#url{:name => "url", :size => "30", :type => "text", :value => ""}/
+              %p.comment-form-comment
+                %label{:for => "comment"} Comment
+                %textarea#comment{"aria-required" => "true", :cols => "45", :name => "comment", :rows => "8"}
+              %p.form-submit
+                %input#submit{:name => "submit", :type => "submit", :value => "Post Comment"}/
+                %input#comment_post_ID{:name => "comment_post_ID", :type => "hidden", :value => "262"}/
+                %input#comment_parent{:name => "comment_parent", :type => "hidden", :value => "0"}/
+          / #respond
+        / #comments .comments-area
+        #backers
+          %p No backers yet. Be the first!
+  / / container
+/ / content

@@ -1,0 +1,48 @@
+!!!
+/[if IE 7] <html class="ie7 oldie" lang="en" lang="en-US">
+/[if IE 8] <html class="ie8 oldie" lang="en" lang="en-US">
+/[if IE 9] <html class="ie9" lang="en" lang="en-US">
+/ [if gt IE 9]><!
+%html{:lang => "en-US"}
+  / <![endif]
+  %head
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %title CHURCHPLANTR
+    /[if lt IE 9]
+      %script{:src => "http://fundifydemo.castyourvision.net/wp-content/themes/fundify/js/html5.js", :type=>"text/javascript"}
+    %meta{:content => "noindex,nofollow", :name => "robots"}/
+    %link{rel: 'stylesheet', href: '/stylesheets/auth.css'}
+  %body.auth
+    .navbar.navbar-fixed-top#header
+      .navbar-inner
+        .container
+          %button.btn.btn-navbar.collapsed{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand#logo{:href => "./index.html"} CHURCHPLANTR
+
+          .dropdown.pull-right
+            %img.user-nav-img{:src => '/images/thewatts.jpg'}
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Dropdown trigger
+            %ul.dropdown-menu{"aria-labelledby" => "dLabel", :role => "menu"}
+
+          .nav-collapse.collapse{:style => "height: 0px;"}
+            %ul.nav#main-nav
+              %li
+                %a{:href => "#"} Find a Cause
+              %li
+                %a{:href => "#"} Start Your Cause
+              %li
+                %a{:href => "#"} The Details
+    = yield
+    / / footer
+    %script{:src => "/javascripts/jquery.min.js"}
+    %script{:src => "/javascripts/jquery.masonry.min.js"}
+    :javascript
+      var fundifySettings = {"is_front_page":"1","currency":{"thousands":null,"decimal":null,"symbol":"$"}};
+    %script{:src => "/javascripts/javascripts/bootstrap-collapse.js"}
+    %script{:src => "/javascripts/javascripts/bootstrap-tab.js"}
+    %script{:src => "/javascripts/javascripts/bootstrap-dropdown.js"}
+    %script{:src => "/javascripts/scripts.js"}

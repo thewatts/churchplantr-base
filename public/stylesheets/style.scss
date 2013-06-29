@@ -1,0 +1,64 @@
+@import "bootstrap.css";
+@import "bootstrap-responsive.css";
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,800,300");
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,700,300");
+// @import "home";
+// @import "auth";
+
+// defaults
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// colors
+$grey: #878787;
+
+// mixins
+@mixin breakpoint($point) {
+  @if $point == web {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 650px)  { @content; }
+  }
+}
+
+// colors
+$background: #f8f2e0;
+$title_red: #6d2612;
+$copy_red: #b75738;
+
+// main layout
+#logo {
+
+}
+
+
+
+#header .navbar-inner {
+  padding: 20px 0;
+  background: #fafafa !important;
+}
+
+#main-nav {
+  float: right;
+  @include breakpoint(tablet){ float: none; }
+  @include breakpoint(mobile){ float: none; }
+  li {
+    a {
+      text-shadow: none;
+      color: $grey;
+      font-family: "Oswald";
+      font-weight: 300;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
